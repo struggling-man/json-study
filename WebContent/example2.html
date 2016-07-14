@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON study page</title>
+</head>
+<body>
+<h3>通过JSON字符串来创建对象</h3>
+
+<p>
+First Name:<span id="fname"></span><br>
+改过的名:<span id="atm"></span>
+</p>
+
+
+<script type="text/javascript">
+var employees = [
+                 {"firstName":"smart","lastName":"liu"},
+                 {"firstName":"chao","lastName":"邓"},
+                 {"firstName":"凤姐"，"lastName":"罗"},
+                 ];
+               // document.getElementById("fname").innerHTML=JSONObject[1].firstName;
+                 employees[0].firstName=奥特曼;
+                 employees[1].firstName="Jobs";
+                 document.getElementById("atm").innerHTML=employees[0].firstName;
+                 document.getElementById("fname").innerHTML=employees[1].firstName;
+</script>
+
+</body>
+</html>

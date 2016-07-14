@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h2>通过 JSON 字符串来创建对象</h2>
+<p>First Name: <span id="fname"></span><br>
+First Name: <span id="atm"></span>
+</p> 
+
+<script type="text/javascript">
+var employees = [
+{ "firstName":"Bill" , "lastName":"Gates" },
+{ "firstName":"George" , "lastName":"Bush" },
+{ "firstName":"Thomas" , "lastName": "Carter" }
+];
+// employees[1].firstName="Jobs";
+// document.getElementById("fname").innerHTML=employees[1].firstName;
+
+employees[0].firstName="奥特曼";
+employees[1].firstName="Jobs";
+document.getElementById("atm").innerHTML=employees[0].firstName;
+document.getElementById("fname").innerHTML=employees[1].firstName;
+</script>
+
+</body>
+</html>

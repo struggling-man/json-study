@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>在javascript中创建JSON对象</h2>
+<p>
+Name:<span id="jname"></span><br>
+Age:<span id="jage"></span><br>
+Address:<span id="jstreet"></span><br>
+Phone:<span id="jphone"></span><br>
+</p>
+
+<script type="text/javascript">
+var JSONObject={
+		"name":"silly man",
+		"street":"天霸动霸tua",
+		"age":19,
+		"phone":0773-5238110
+};
+document.getElementById("jname").innerHTML=JSONObject.name
+document.getElementById("jage").innerHTML=JSONObject.age
+document.getElementById("jstreet").innerHTML=JSONObject.street
+</script>
+</body>
+</html>
